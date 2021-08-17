@@ -6,9 +6,15 @@ const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
+  entry: './src/client/index.js',
+  output: {
+    libraryTarget: 'var',
+    library: 'Client',
+    clean: true,
+  },
   mode: 'development',
   devtool: 'source-map',
-  entry: './src/client/index.js',
+
   module: {
     rules: [
       {
@@ -38,9 +44,4 @@ module.exports = {
     }),
     new BundleAnalyzerPlugin(),
   ],
-  output: {
-    libraryTarget: 'var',
-    library: 'Client',
-    clean: true,
-  },
 };

@@ -9,7 +9,7 @@ import './styles/header.scss';
 
 export { checkForName, handleSubmit };
 
-console.log(checkForName);
+// console.log(checkForName);
 
-alert('I EXIST!');
-alert('NEW ALERT AFTER REBUILD');
+// alert('I EXIST!');
+// alert('NEW ALERT AFTER REBUILD');

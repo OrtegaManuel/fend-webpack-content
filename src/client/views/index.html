@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Test</title>
-    <script src="../../../dist/main.js"></script>
+    <!-- <script src="../../../dist/main.js"></script> -->
 
     <!-- The main.js replaces all of the below references -->
 
@@ -24,7 +24,7 @@
 
     <main>
       <section>
-        <form class="" onsubmit="return handleSubmit(event)">
+        <form class="" onsubmit="return Client.handleSubmit(event)">
           <input
             id="name"
             type="text"
@@ -37,8 +37,8 @@
             type="submit"
             name=""
             value="submit"
-            onclick="return handleSubmit(event)"
-            onsubmit="return handleSubmit(event)"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return Client.handleSubmit(event)"
           />
         </form>
       </section>
