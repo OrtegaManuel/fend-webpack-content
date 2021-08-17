@@ -16,6 +16,10 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
     ],
   },
   plugins: [
@@ -35,6 +39,8 @@ module.exports = {
     new BundleAnalyzerPlugin(),
   ],
   output: {
+    libraryTarget: 'var',
+    library: 'Client',
     clean: true,
   },
 };
